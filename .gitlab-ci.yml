@@ -1,5 +1,15 @@
 stages:
   - test
+  - build
+  - deploy
+
+build:
+  stage: build
+  script:
+    - dotnet build --configuration Release
+    - dotnet publish --no-build --no-restore --configuration Release --output $CI_PROJECT_DIR/publish/
+  only:
+    - master
 
 test-job:
   stage: test
@@ -7,3 +17,11 @@ test-job:
     - echo "Running test job"
     - echo "This is a test job to verify the GitLab Ci Runner setup"
     - echo "Add your test commands here"
+
+deploy:
+  stage: deploy
+  script:
+    - echo "Deploying the application done"
+  when: manual
+  only:
+    - master
