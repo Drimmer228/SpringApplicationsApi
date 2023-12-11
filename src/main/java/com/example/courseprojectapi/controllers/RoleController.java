@@ -20,6 +20,7 @@ public class RoleController {
 
         return ResponseEntity.ok(roleModel);
     }
+
     @GetMapping("/findAtRoleName/{roleName}")
     public ResponseEntity<RoleModel> getRoleByRoleName(@PathVariable String roleName) {
         RoleModel roleModel = roleRepository.findByRoleName(roleName);

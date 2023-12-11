@@ -14,11 +14,6 @@ public class LogModel {
     @ManyToOne
     @JoinColumn(name = "users_id")
     private UserModel user;
-
-    @ManyToOne
-    @JoinColumn(name = "app_id")
-    private ApplicationModel application;
-
     @Column(name = "action_desc", nullable = false)
     private String actionDescription;
 
@@ -39,14 +34,6 @@ public class LogModel {
 
     public void setUser(UserModel user) {
         this.user = user;
-    }
-
-    public ApplicationModel getApplication() {
-        return application;
-    }
-
-    public void setApplication(ApplicationModel application) {
-        this.application = application;
     }
 
     public String getActionDescription() {

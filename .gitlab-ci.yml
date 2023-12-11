@@ -8,20 +8,20 @@ build:
   script:
     - dotnet build --configuration Release
     - dotnet publish --no-build --no-restore --configuration Release --output $CI_PROJECT_DIR/publish/
-  only:
-    - master
+  dependencies:
+    - test-job
 
 test-job:
   stage: test
   script:
     - echo "Running test job"
-    - echo "This is a test job to verify the GitLab Ci Runner setup"
+    - echo "This is a test job to verify the GitLab CI Runner setup"
     - echo "Add your test commands here"
+  allow_failure: false
 
 deploy:
   stage: deploy
   script:
     - echo "Deploying the application done"
-  when: manual
-  only:
-    - master
+  dependencies:
+    - build
