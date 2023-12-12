@@ -6,6 +6,7 @@ stages:
 build:
   stage: build
   script:
+    - mvn dependency:purge-local-repository
     - mvn
   dependencies:
     - test-job
