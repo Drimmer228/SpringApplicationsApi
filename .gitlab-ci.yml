@@ -10,7 +10,7 @@ build:
     - dotnet publish --no-build --no-restore --configuration Release --output $CI_PROJECT_DIR/publish/
   dependencies:
     - test-job
-//command
+    
 test-job:
   stage: test
   script:
