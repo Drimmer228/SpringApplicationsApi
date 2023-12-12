@@ -6,11 +6,10 @@ stages:
 build:
   stage: build
   script:
-    - dotnet build --configuration Release
-    - dotnet publish --no-build --no-restore --configuration Release --output $CI_PROJECT_DIR/publish/
+    - mvn clean package
   dependencies:
     - test-job
-    
+
 test-job:
   stage: test
   script:
