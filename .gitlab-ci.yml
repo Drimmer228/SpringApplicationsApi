@@ -6,7 +6,8 @@ stages:
 build:
   stage: build
   script:
-    - mvn dependency:purge-local-repository --add-opens=java.base/java.lang=ALL-UNNAMED
+    - java -version
+    - mvn dependency:purge-local-repository
     - mvn dependency:purge-local-repository -U
     - mvn
   dependencies:
