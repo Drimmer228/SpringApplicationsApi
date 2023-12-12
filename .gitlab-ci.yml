@@ -6,6 +6,7 @@ stages:
 build:
   stage: build
   script:
+    - rm -rf ~/.m2/*
     - mvn clean 
     - mvn package
   dependencies:
