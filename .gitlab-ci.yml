@@ -6,7 +6,8 @@ stages:
 build:
   stage: build
   script:
-    - mvn clean package
+    - mvn clean
+    - mvn package
   dependencies:
     - test-job
 
