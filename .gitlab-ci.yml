@@ -6,6 +6,10 @@ stages:
 build:
   stage: build
   script:
+    - tar xzvf apache-maven-3.9.6-bin.tar.gz
+    - mv apache-maven-3.9.6 /desired/path
+    - export M2_HOME=/desired/path/apache-maven-3.9.6
+    - export PATH=$M2_HOME/bin:$PATH
     - mvn --version
     - java -version
     - mvn dependency:purge-local-repository
