@@ -6,7 +6,12 @@ stages:
 build:
   stage: build
   script:
-    - rm -rf ~/.m2/*
+    - sudo wget -O /tmp/apache-maven.tar.gz https://downloads.apache.org/maven/maven-3/3.8.5/binaries/apache-maven-3.8.5-bin.tar.gz
+
+    - sudo tar xf /tmp/apache-maven.tar.gz -C /opt
+
+    - export M2_HOME=/opt/apache-maven-3.8.5
+    - export PATH=${M2_HOME}/bin:${PATH}
     - mvn clean 
     - mvn package
   dependencies:
