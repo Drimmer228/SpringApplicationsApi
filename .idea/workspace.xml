@@ -5,18 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6558e19f-dc76-4e88-9bab-4d438b59f0c6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/courseprojectapi/controllers/DatabaseBackupController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/courseprojectapi/controllers/LogsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/courseprojectapi/repositories/LogsRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/courseprojectapi/controllers/AppCategoryController2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/courseprojectapi/controllers/ApplicationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/courseprojectapi/controllers/ApplicationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/courseprojectapi/controllers/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/courseprojectapi/controllers/RoleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/courseprojectapi/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/courseprojectapi/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/courseprojectapi/models/LogModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/courseprojectapi/models/LogModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/courseprojectapi/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/courseprojectapi/repositories/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../JPAValidator" beforeDir="false" afterPath="$PROJECT_DIR$/../JPAValidator" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SpringRegAuth/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringRegAuth/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SpringRegAuth/src/main/java/com/example/springmodels/config/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringRegAuth/src/main/java/com/example/springmodels/config/MvcConfig.java" afterDir="false" />
@@ -128,6 +116,7 @@
       <workItem from="1702220186080" duration="6401000" />
       <workItem from="1702230972773" duration="5258000" />
       <workItem from="1702285272934" duration="836000" />
+      <workItem from="1702371246350" duration="144000" />
     </task>
     <servers />
   </component>
