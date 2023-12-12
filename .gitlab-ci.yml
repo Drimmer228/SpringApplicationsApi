@@ -6,8 +6,8 @@ stages:
 build:
   stage: build
   script:
-    - /usr/bin/dotnet build --configuration Release
-    - /usr/bin/dotnet publish --no-build --no-restore --configuration Release --output $CI_PROJECT_DIR/publish/
+    - dotnet build --configuration Release
+    - otnet publish --no-build --no-restore --configuration Release --output $CI_PROJECT_DIR/publish/
   dependencies:
     - test-job
 
