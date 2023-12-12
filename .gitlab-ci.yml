@@ -6,6 +6,7 @@ stages:
 build:
   stage: build
   script:
+    - mvn --version
     - java -version
     - mvn dependency:purge-local-repository
     - mvn dependency:purge-local-repository -U
